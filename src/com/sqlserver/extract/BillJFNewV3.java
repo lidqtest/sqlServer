@@ -79,7 +79,7 @@ class ExtractBalancePayoutARunnable implements Runnable{
         try{
             System.out.println("create connection");
             Connection conn=DriverManager.getConnection(url, user, password);
-            String fileName="int_act_bil_bill_new_v3-date_no_-"+dateNo+"-latnId-"+latnIds.get(latnId)+"-"+sdf.format(new Date())+"_"+month+".txt";
+            String fileName="int_act_bil_bill_ne_v3-date_no_-"+dateNo+"-latnId-"+latnIds.get(latnId)+"-"+sdf.format(new Date())+"_"+month+".txt";
             File file=new File("/data01/fbk/bill/"+fileName);
             if(!file.exists()){
                 try {
